@@ -1,0 +1,44 @@
+.picture {
+    /*
+    Lay the picture containers out one after the other. (To see why
+    this line is important, try changing it to 'block' or 'inline'.)
+    */
+    display: inline-block;
+
+    /* add a little space between each picture and the next */
+    margin: 10px;
+}
+
+.muesum img {
+    /*
+    The original images are all different sizes but we need
+    them to be consistent for the gallery layout to look good.
+    */
+    height: 200px;
+
+    /* add an outline around each picture */
+    border: 3px double black;
+}
+
+.gallery img{
+  height: 200px;
+  border: 3px double black;
+}
+.gallery p {
+    text-align: center;
+    margin-top: 0;
+}
+body{
+    text-align:center;
+    color:#4E32C9;
+	font-family: "Indie Flower", cursive;
+  	background-image: url('https://pepperlu.com/cdn/shop/products/WatercolorStrawberries1_5x5_web_2048x.jpg?v=1542787728');
+  	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+}
+
+body img{
+  height: 200px;
+  border: 3px double black;
+}
