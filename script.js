@@ -3,7 +3,7 @@ var photos =["https://www.suttons.co.uk/product_images/202951A1.jpg","https://mi
 
 var captions = ["Cherry","Mango","Pienapple"];
 $.each(photos, function(index, value) {
-    $(".muesum").append("<div class='image-container'><img src='" + value + "'>" + "<figcaption>" + captions[index] + "</figcaption></div>");
+    $("#here").append("<div class='image-container'><img src='" + value + "'>" + "<figcaption>" + captions[index] + "</figcaption></div>");
 		});
 
 
@@ -16,8 +16,8 @@ $(".add").click(function() {
     $(".numImg").text(photos.length);
 });
 
-
-		$(".clear").click(function() {
-    		$(".muesum .image-container:last-child").remove();
+$(".clear").click(function() {
+    photos.pop();
+    $("#here").children().last().remove();
 });
 
